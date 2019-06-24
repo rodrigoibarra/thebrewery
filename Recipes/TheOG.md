@@ -1,0 +1,35 @@
+# The OG
+
+## Ingredients
+
+|Ingredient|weight|
+|----------|-------|
+|coffe| 17.5g|
+|water| 297g|
+|Temp| 90ºc ish |
+
+## Ratio
+
+**17:1**
+
+## Recipe
+
+
+The OG for me, is my daily brew, this is the most basic recipe, and following coffee theory, it's all about the ratios. In this particular case, I usually lean towards a lighter roast and a lighter ratio as noted, **17:1** meaning 17 parts of water per coffe grams.
+
+But, my dude, what does that even mean? That means this coffee will be on the lighter side, more water less "strenght"... Now, I wont be giving you any tasting notes or detail anything about this, it will vary a lot depending on what kind of coffee, you are using and I do some adjustments based on that.
+
+So how do I actually do that? well here we go:
+
+1. Heat up the water, if you got a temp controlled kettle set it up for 90ºc if not, just let that thing go until it reaches boiling point and then let it cool down a bit.
+2. Grind your coffee, this is your first variable, I usually grind on the finner side but if the roast is darker, or if I'm extracting more bitterness than usual,  I go coarser.
+3. Heat up your brewer and rinse the filter, some people frown upon this but honestly just do it, pour water into your filter and let it pour and discard it, at best it will get rid of any dust or particles.
+4. Now on to the pour, I usually pour in stages, this helps with even extraction
+   -  The bloom, I usually bloom 40gr of water for 35 seconds.
+   -  My second pour is 50gr of water, this takes me to 90 of those 297g I need.
+   -  Pour three, four and five worth of 50gr of water are center pours, meaning I pour straight into the middle of the brew and just try to keep it consistent, usually waiting 15 seconds between pours.
+   - The last pour is another 50g pour but this one will stirr the brew, so I pour in circles clockwise, this will get rid of any grounds that are stuck on the sides of the brew.
+
+This thing should take around 4 minutes and yeild a single cup, let it cool down, serve and enjoy.
+
+Add sugar if you want...
