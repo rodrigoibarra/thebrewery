@@ -9,57 +9,92 @@
 <style>
     :root {
   font-size: calc(1rem + 0.5vw);
+  font-family: 'Roboto', sans-serif;
 }
-    body{
-        padding:0;
-        margin:0;
-        font-size:100%;
-    }
-    header{
-        height: 115vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: whitesmoke;
-
-    }
-    .tag{
-        font-size:1.2rem;
-        border:.80em solid black;
-        padding:.80em;
-        background: whitesmoke;
-        outline: .80em solid whitesmoke;
-    }
-    .lettering{
-        font-family: 'Six Caps', sans-serif;
-        margin:0;
-        font-size:3em;
-        letter-spacing: .1em;
-    }
-    .tag p{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 100;
-        font-size:.80em;
-        padding:.5em;
-        margin: 0;
-        text-transform: uppercase;
-        background-color: #5FE3A4;
-    }
-
-    .tag span{
-        display: block;
-    }
-
-
 </style>
 <body>
 <header>
-    <div class="tag">
-        <h1 class="lettering">The Brewery</h1>
-        <p>Coffe notes <span>by Rodrigo Ibarra</span></p>
-    </div>
+<h1>Still Untitled</h1>
+<p>Coffe notes by Rodrigo Ibarra</p>
 </header>
 
+<section class="theoryBlock">
+    <h2 class="sectionTitle theoryTitle">Brewing Theory</h2>
+    <p>This section contains a beginers guide to brewing coffe and explains some core concepts to getting a good cup of coffee.</p>
+
+    <a href="#" class="callButton">This should link to brewing 101</a>
+</section>
+<section class="gearBlock">
+    <h2 class="sectionTitle gearTitle">What I use to brew.</h2>
+        <a href="#" class="homeSetup gearItem">
+            <h3 class="homeSetupTitle subTitle">Home</h3>
+            <p>My home brewing setup</p>
+        </a>
+        <a href="#" class="officetup gearItem">
+            <h3 class="homeSetupTitle subTitle">Office</h3>
+            <p>My Office brewing setup</p>
+        </a>
+</section>
+<section class="recipeBlock">
+    <h2 class="sectionTitle recipeTitle">The recipes</h2>
+    <div class="recipeBook">
+        <ul>
+            <li class="recipeListItem"><a href="http://#" target="_blank" rel="noopener noreferrer">Fakespresso</a></li>
+            <li class="recipeListItem"><a href="http://#" target="_blank" rel="noopener noreferrer">Muricano</a></li>
+            <li class="recipeListItem"><a href="http://#" target="_blank" rel="noopener noreferrer">The OG</a></li>
+        </ul>
+    </div>
+</section>
+<section class="coffeeBlock">
+</section>
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,400|Six+Caps&display=swap" rel="stylesheet">
+<div id="app">
+        <h1>Coffees I've used</h1>
+        <ul>
+            <li v-for="item in items">
+                <h3>{{ item['fields']['Origen'] }}</h3>
+                <p>{{ item['fields']['Brand'] }}</p>
+                <p><strong>Price: </strong>{{ item['fields']['RoastDate'] }}</p>
+                <p><strong>Category: </strong>{{ item['fields']['RoastName'] }}</p>
+            </li>
+        </ul>
+    </div><!--app-->
+
+    <!-- Include Dependancy Scripts -->
+    <script type="text/javascript" src="
+https://unpkg.com/vue"></script>
+    <script type="text/javascript" src="
+https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script><script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: {
+                items: []
+            },
+            mounted: function(){
+               this.loadItems();
+            },
+            methods: {
+                loadItems: function(){
+
+                    // Init variables
+                    var self = this
+                    var app_id = "appu4wCd0BKWglB0E";
+                    var app_key = "keyALfMyX03J3d3iO";
+                    this.items = []
+axios.get(
+                        "https://api.airtable.com/v0/"+app_id+"/Menu?view=Grid%20view",
+                        {
+                            headers: { Authorization: "Bearer "+app_key }
+                        }
+                    ).then(function(response){
+                        self.items = response.data.records
+                    }).catch(function(error){
+                        console.log(error)
+                    })
+                }
+            }
+        });
+    </script>
+
 </body>
 </html>
