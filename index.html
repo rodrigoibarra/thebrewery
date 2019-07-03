@@ -2,49 +2,47 @@
 layout: home
 ---
 <header>
-        <h1>Still Untitled</h1>
-        <p>Coffe notes by Rodrigo Ibarra</p>
-        </header>
+    <h1>Still Untitled</h1>
+    <p>Coffe notes by Rodrigo Ibarra</p>
+</header>
 
-        <section class="theoryBlock">
-            <h2 class="sectionTitle theoryTitle">Brewing Theory</h2>
-            <p>This section contains a beginers guide to brewing coffe and explains some core concepts to getting a good cup of coffee.</p>
+<section class="theoryBlock">
+    <h2 class="sectionTitle theoryTitle">Brewing Theory</h2>
+    <p>This section contains a beginers guide to brewing coffe and explains some core concepts to getting a good cup of coffee.</p>
 
-            <a href="#" class="callButton">This should link to brewing 101</a>
-        </section>
-        <section class="gearBlock">
-            <h2 class="sectionTitle gearTitle">What I use to brew.</h2>
-                <a href="#" class="homeSetup gearItem">
-                    <h3 class="homeSetupTitle subTitle">Home</h3>
-                    <p>My home brewing setup</p>
-                </a>
-                <a href="#" class="officetup gearItem">
-                    <h3 class="homeSetupTitle subTitle">Office</h3>
-                    <p>My Office brewing setup</p>
-                </a>
-        </section>
-        <section class="recipeBlock">
-            <h2 class="sectionTitle recipeTitle">The recipes</h2>
-            <div class="recipeBook">
-                <ul>
-                    {% for post in site.posts %}
-                    <li class="recipeListItem">
-                        <a href="{{ post.url }}">{{ post.title }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </section>
-        <section class="coffeeBlock">
-            <div id="app">
-                <h1>Coffees I've used</h1>
-                <ul>
-                    <li v-for="item in items">
-                        <h3>(( item['fields']['Origen'] ))</h3>
-                        <p>(( item['fields']['Brand'] ))</p>
-                        <p><strong>Price: </strong>(( item['fields']['RoastDate'] ))</p>
-                        <p><strong>Category: </strong>(( item['fields']['RoastName'] ))</p>
-                    </li>
-                </ul>
-            </div><!--app-->
-        </section>
+    <a href="/Brew-Theory" class="callButton">This should link to brewing 101</a>
+</section>
+<section class="gearBlock">
+    <h2 class="sectionTitle gearTitle">What I use to brew.</h2>
+        <a href="/Home-Setup" class="homeSetup gearItem">
+            <h3 class="homeSetupTitle subTitle">Home</h3>
+            <p>My home brewing setup</p>
+        </a>
+        <a href="/Office-Setup" class="officetup gearItem">
+            <h3 class="homeSetupTitle subTitle">Office</h3>
+            <p>My Office brewing setup</p>
+        </a>
+</section>
+<section class="recipeBlock">
+    <h2 class="sectionTitle recipeTitle">The recipes</h2>
+    <div class="recipeBook">
+        <ul>
+            {% for post in site.posts %}
+            <li class="recipeListItem">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+<section class="coffeeBlock">
+    <div id="app">
+        <h1>Coffees I've used</h1>
+        <details v-for="item in items">
+            <summary>(( item['fields']['RoastName'] ))</summary>
+            <p>(( item['fields']['Brand'] ))</p>
+            <p><strong>Roast Date: </strong>(( item['fields']['RoastDate'] ))</p>
+            <p><strong>Origen: </strong>(( item['fields']['Origen'] ))</p>
+        </details>
+    </div><!--app-->
+</section>
