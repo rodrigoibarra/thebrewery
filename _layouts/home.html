@@ -1,0 +1,41 @@
+{% include doctype.html %}
+<body>
+{% include nav.html %}
+  {{content}}
+<script type="text/javascript" src="
+https://unpkg.com/vue"></script>
+    <script type="text/javascript" src="
+https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script><script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            delimiters: ["((", "))"],
+            data: {
+                items: []
+            },
+            mounted: function(){
+               this.loadItems();
+            },
+            methods: {
+                loadItems: function(){
+
+                    // Init variables
+                    var self = this
+                    var app_id = "appu4wCd0BKWglB0E";
+                    var app_key = "keyALfMyX03J3d3iO";
+                    this.items = []
+axios.get(
+                        "https://api.airtable.com/v0/"+app_id+"/Menu?view=Grid%20view",
+                        {
+                            headers: { Authorization: "Bearer "+app_key }
+                        }
+                    ).then(function(response){
+                        self.items = response.data.records
+                    }).catch(function(error){
+                        console.log(error)
+                    })
+                }
+            }
+        });
+    </script>
+
+{% include footer.html %}
