@@ -1,4 +1,6 @@
-
+---
+layout: default
+---
 ## Office Kit
 
 Lets get one thing straight, this is not a great setup, I mean, I currently work at a government office, there's no high end espresso machine, there's no common room so we can eat, so I have to make do... Also, stuff gets "lost" all the time, also also there's barely any storage that's not used for files... Also also also, This is a professional enviroment dammit and there's no way I'll bust out the chemestry set to brew coffee, at the office I'll follow the wise chinese mantra "Any coffee I brew is better than that starbucks shit you like to get"... Now I wont bad mouth the big brand, It just doesnt sit right in my stomach ok?

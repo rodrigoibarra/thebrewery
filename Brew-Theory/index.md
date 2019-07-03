@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Brewing theory
 
 Now while brewing is basically an exact science, however there's a bunch of things that will change your cup. Repetition is the only thing that will lead to *"the perfect cup"* also, it needs to be **YOUR** perfect cup, sure, it's cool to look at people's recipes and be like I'm gonna replicate it and this person or that person says it will be the best coffee ever, it might not be your jam, so keep that in mind while you look through *my recipes*.
