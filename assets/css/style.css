@@ -1,0 +1,98 @@
+:root {
+    font-size: calc(1rem + 0.5vw);
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /* Colors
+  Main: #FC664F;
+  Accent: #77BCB1;
+  Black: #393939;
+  Light: #F6F2EC;
+  Gray: #F4F4F4;
+
+  */
+
+
+
+  body{
+    margin:0;
+    padding:0;
+    background:#F6F2EC ;
+    color:#393939;
+    font-family: 'Roboto', sans-serif;
+  }
+  .attention{
+  width: 100%;
+  background:#FC664F;
+  font-size: .8rem;
+  text-align: center;
+  margin: 0;
+  padding:.8rem;
+  }
+  section{
+    max-width: 72ch;
+    margin: 0 auto;
+  }
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:85vh;
+    }
+
+    h1, h2, h3, h4{
+        font-family: 'Yeseva One', 'Roboto', sans-serif;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+
+.heroHome{
+    flex-direction: column;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.heroTitle{
+    margin:.2em;
+    text-transform: uppercase;
+}
+
+.heroPee{
+    font-size:.6em ;
+    mask-image: url(/assets/img/texture-grungy.png);
+}
+
+svg {
+    mask-image: url(/assets/img/texture-grungy.png);
+}
+.goodCupIcon{
+    height: 1.8em;
+}
+.goodCupIcon g {
+    fill: #FC664F;
+}
+
+.title{
+    text-align: center;
+    letter-spacing: .04em;
+    -webkit-mask-image: url(/assets/img/texture-grungy.png);
+    -moz-mask-image: url(/assets/img/texture-grungy.png);
+    -ms-mask-image: url(/assets/img/texture-grungy.png);
+    -o-mask-image: url(/assets/img/texture-grungy.png);
+    mask-image: url(/assets/img/texture-grungy.png);
+}
+
+        .title span{
+            display: block;
+            font-size: .2em;
+            font-weight: 100;
+            letter-spacing: .2em;
+            font-family: 'Roboto', sans-serif;
+
+        }
