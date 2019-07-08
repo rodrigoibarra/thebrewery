@@ -52,7 +52,7 @@ header{
         font-size: 2.5rem;
     }
 
-.heroHome{
+.hero{
     flex-direction: column;
     font-family: sans-serif;
     font-weight: 900;
@@ -70,6 +70,13 @@ header{
 
 svg {
     mask-image: url(/assets/img/texture-grungy.png);
+}
+.svgIcon{
+    height: 4.8em;
+}
+
+.coffee{
+    height: 2.8em;
 }
 .goodCupIcon{
     height: 1.8em;
