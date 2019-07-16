@@ -1,12 +1,16 @@
 ---
 layout: home
 ---
+<!--
 <section class="theoryBlock">
+    <div class="theoryBook">
     <h2 class="title theoryTitle">Brewing Theory</h2>
     <p>This section contains a beginers guide to brewing coffe and explains some core concepts to getting a good cup of coffee.</p>
 
     <a href="/Brew-Theory" class="callButton">This should link to brewing 101</a>
+    </div>
 </section>
+-->
 <section class="gearBlock">
     <h2 class="title gearTitle">What I use to brew.</h2>
         <a href="/Home-Setup" class="homeSetup gearItem">
@@ -19,17 +23,18 @@ layout: home
         </a>
 </section>
 <section class="recipeBlock">
-    <h2 class="title recipeTitle">The recipes</h2>
     <div class="recipeBook">
-        <ul>
+        <h2 class="title recipeTitle">The recipes</h2>
+        <ul class="recipeList">
             {% for post in site.posts %}
-            <li class="recipeListItem">
-                <a href="{{ post.url }}">{{ post.title }}</a>
+            <li>
+                <a href="{{ post.url }}" class="recipeListItem">{{ post.title }} <span>{{post.ratio}} ratio</span></a>
             </li>
             {% endfor %}
         </ul>
     </div>
 </section>
+><!--
 <section class="coffeeBlock">
     <div id="app">
         <h2 class="title">Coffees I've used</h2>
@@ -39,5 +44,5 @@ layout: home
             <p><strong>Roast Date: </strong>(( item['fields']['RoastDate'] ))</p>
             <p><strong>Origen: </strong>(( item['fields']['Origen'] ))</p>
         </details>
-    </div><!--app-->
-</section>
+    </div>
+</section>> -->

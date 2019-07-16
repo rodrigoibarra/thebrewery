@@ -1,23 +1,12 @@
 ---
-layout: post
+layout: recipe
 title:  "Fakespresso"
 date:   2019-07-02 15:10:03 -0500
+coffee: "20g"
+water: "50g"
+ratio: "2.5:1"
+temp: "100ºc ish"
 ---
-# Fakespresso
-
-## Ingredients
-
-|Ingredient|weight|
-|----------|-------|
-|coffe| 20g|
-|water| 50g|
-|Temp| 100ºc ish |
-
-## Ratio
-
-**2.5:1**
-
-## Recipe
 
 While the name might put you off, since it's conception, the aeropress is built to make espresso like coffee, and then with the Fellow Prismo set up, that's more of a reality, if done right you might even get some bomb ass crema.
 

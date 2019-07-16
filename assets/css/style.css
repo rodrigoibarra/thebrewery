@@ -30,8 +30,10 @@
   padding:.8rem 0;
   }
   section{
-    max-width: 72ch;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
 header{
@@ -41,7 +43,7 @@ header{
     height:85vh;
     }
 
-    h1, h2, h3, h4{
+    h1, h2, h3, h4, summary{
         font-family: 'Yeseva One', 'Roboto', sans-serif;
     }
 
@@ -51,6 +53,7 @@ header{
     h2{
         font-size: 2.5rem;
     }
+
 
 .hero{
     flex-direction: column;
@@ -103,3 +106,98 @@ svg {
             font-family: 'Roboto', sans-serif;
 
         }
+
+.recipeBlock{
+    background-color: #FC664F;
+    padding:.8rem;
+    color:white;
+}
+
+.recipeBook, .recipeLayout, .theoryBook{
+    width: 78ch;
+}
+.recipeBook{
+    border:.8rem solid white;
+    padding:.8rem;
+    mask-image: url(/assets/img/texture-grungy.png);
+
+}
+.recipeLayout{
+    background-color: #393939;
+    width: 100%;
+    padding:1.5em 0;
+}
+.recipeSheet{
+background: #F6F2EC;
+width: 78ch;
+margin: 0 auto;
+padding:1em;
+box-shadow: 0 0 0px 4px rgba(0,0,0,0.1);
+outline: 4px solid #393939;
+outline-offset: -10px;
+
+}
+
+.recipeSummary{
+    font-size:2.5em;
+    background-color: #F6F2EC;
+    border-bottom:8px dashed #FC664F;
+
+}
+
+.recipeIngredients{
+    width: 80%;
+    margin:.5rem auto;
+    padding:0;
+    list-style: none;
+}
+.recipeIngredients li{
+    margin:0;
+    padding:.5rem;
+    border-bottom:1px solid #393939;
+}
+
+.recipeListItem, .recipeIngredients li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recipeList{
+    list-style: none;
+}
+.recipeListItem {
+    color:#F6F2EC;
+    text-decoration:none;
+    border-bottom:.4rem solid #393939;
+    padding:.2rem 0;
+}
+.recipeIngredients span , .recipeListItem span{
+    font-size: .8rem;
+}
+
+ol li{
+    font-size: 1.2rem;
+    padding:.5rem;
+}
+
+.gearBlock{
+    background-color: #393939;
+    color:#F6F2EC;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.gearTitle{
+    width: 100%;
+}
+
+.gearItem{
+    color:white;
+    width: 50%;
+    height: 65vh;;
+    box-sizing: border-box;
+    padding:.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

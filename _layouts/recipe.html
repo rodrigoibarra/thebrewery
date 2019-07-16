@@ -1,0 +1,26 @@
+{% include doctype.html %}
+<body>
+    <p class="attention">This is a live design, so, a ton of stuff is not done or not I havent even got started with it.</p>
+    <header class="hero">
+        <h1 class="title heroTitle">
+            {{ page.title }}
+        </h1>
+        <p class="heroPee">CD {% include good-cup.html %} MX</p>
+    </header>
+{% include nav.html %}
+<section class="recipeLayout">
+    <div class="recipeSheet">
+    <details>
+        <Summary class="title recipeSummary">The ingredients</Summary>
+            <ul class="recipeIngredients">
+                <li>Coffee <span>{{ page.coffee }}</span></li>
+                <li>Water <span>{{ page.water }}</span></li>
+                <li>Ratio <span>{{ page.ratio }}</span></li>
+                <li>Temp <span>{{ page.temp }}</span></li>
+            </ul>
+    </details>
+    <h2 class="title">The recipe</h2>
+        {{content}}
+    </div>
+</section>
+{% include footer.html %}
