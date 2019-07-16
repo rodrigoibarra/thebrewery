@@ -3,9 +3,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta naame="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The Brewery</title>
+    <title>{% if page.title %}{{ site.title }} | {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Yeseva+One&display=swap" rel="stylesheet">
 </head>
