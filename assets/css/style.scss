@@ -121,12 +121,14 @@ svg {
 
 }
 .recipeLayout{
-    background-color: #393939;
+    background-image: url("/assets/img/background2.svg");
+    background-size: 70vh;
     width: 100%;
     padding:1.5em 0;
 }
 .recipeSheet{
 background: #F6F2EC;
+background: linear-gradient(0deg, $Light 75%, $Main 15%);
 width: 78ch;
 margin: 0 auto;
 padding:1em;
@@ -138,7 +140,6 @@ outline-offset: -10px;
 
 .recipeSummary{
     font-size:2.5em;
-    background-color: #F6F2EC;
     border-bottom:8px dashed #FC664F;
 
 }
@@ -228,26 +229,23 @@ ol li{
     outline: .2rem solid;
     outline-color: $Black;
     outline-offset: -.4rem;
-
-
-
     ul{
         margin: .4rem;
+        padding:0;
 
     }
-
     li{
         list-style: none;
+        border-bottom:1px solid $Black;
+        padding:.2rem;
     }
-
     strong{
-        font-size: .6rem;
-        padding-right: .2rem
+        font-size: .56rem;
+        padding-right: .2rem;
+        display: block;
     }
-
     h3{
         margin: .2rem 0;
         color:$Black;
     }
-
 }
