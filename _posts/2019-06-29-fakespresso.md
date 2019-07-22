@@ -12,6 +12,17 @@ While the name might put you off, since it's conception, the aeropress is built 
 
 But that's not what we are here for, we here for sweet sweetr extraction.
 
+<details>
+    <Summary class="title recipeSummary">The ingredients</Summary>
+        <ul class="recipeIngredients">
+            <li>Coffee <span>{{ page.coffee }}</span></li>
+            <li>Water <span>{{ page.water }}</span></li>
+            <li>Ratio <span>{{ page.ratio }}</span></li>
+            <li>Temp <span>{{ page.temp }}</span></li>
+        </ul>
+</details>
+<h2 class="title">The recipe</h2>
+
 So how do I actually do that? well here we go:
 
 1. Heat up the water, if you got a temp controlled kettle set it up for 100ºc if not, for our fakespresso we looking for hot hot water.
