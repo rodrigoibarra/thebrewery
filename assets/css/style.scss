@@ -26,6 +26,11 @@
   margin: 0;
   padding:.8rem 0;
   }
+
+a{
+    text-decoration: none;
+}
+
 section{
 margin: 0 auto;
 display: flex;
@@ -86,7 +91,7 @@ svg {
     fill: #FC664F;
 }
 
-.title{
+.title, h1, h2, h3, h4,{
     text-align: center;
     letter-spacing: .04em;
     -webkit-mask-image: url(/assets/img/texture-grungy.png);
@@ -102,7 +107,6 @@ svg {
     font-weight: 100;
     letter-spacing: .2em;
     font-family: 'Roboto', sans-serif;
-
 }
 
 .recipeBlock{
@@ -126,6 +130,31 @@ svg {
     width: 100%;
     padding:1.5em 0;
 }
+
+.kitTitle{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size:3rem;
+}
+
+.kitLayout{
+    background-image: url("/assets/img/coffe-tile.svg");
+    background-size: 30vh;
+    width: 100%;
+    padding:1.5em 0;
+}
+
+.kitSheet{
+    background: #F6F2EC;
+    width: 78ch;
+    margin: 1rem auto;
+    padding:1rem;
+    box-shadow: 0 0 0px 4px rgba(0,0,0,0.1);
+    outline: 4px solid #393939;
+    outline-offset: -10px;
+
+    }
+
 .recipeSheet{
 background: #F6F2EC;
 background: linear-gradient(0deg, $Light 75%, $Main 15%);
@@ -192,11 +221,10 @@ ol li{
 .gearItem{
     color:white;
     width: 50%;
-    height: 65vh;;
+    height: 82vh;;
     box-sizing: border-box;
     padding:.8rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
