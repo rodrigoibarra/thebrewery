@@ -14,12 +14,10 @@ layout: home
 <section class="gearBlock">
     <h2 class="title gearTitle">What I use to brew.</h2>
         <a href="/Home-Setup" class="homeSetup gearItem">
-            {% include homeKit.html %}
-            <h3 class="title">Home Kit</h3>
+            <h3 class="kitTitle">Home Kit</h3>
         </a>
         <a href="/Office-Setup" class="officetup gearItem">
-            {% include officeKit.html %}
-            <h3 class="title">Office Kit</h3>
+            <h3 class="kitTitle">Office Kit</h3>
         </a>
 </section>
 <section class="recipeBlock">
@@ -37,13 +35,11 @@ layout: home
 <h2 class="title titleCoffeBlock">Coffees I've brewed</h2>
 <section class="coffeeBlock">
     <div id="app" class="coffeeGrid">
-        <div class="coffeeTag" v-for="item in items">
-            <h3 class="title">(( item['fields']['RoastName'] ))</h3>
+        <div class="coffeeTag" v-for="coffee in Coffees">
+            <h3 class="title">(( coffee.roastName ))</h3>
             <ul>
-                <li><strong>Shop:</strong> (( item['fields']['Brand'] ))</li>
-                <li><strong>Origen: </strong>(( item['fields']['Origen'] ))</li>
-                <li><strong>Roast Date: </strong>(( item['fields']['RoastDate'] ))</li>
-
+                <li><strong>Shop:</strong> ((coffee.brand))</li>
+                <li><strong>Origen: </strong>(( coffee.origen ))</li>
             </ul>
         </div>
     </div>
