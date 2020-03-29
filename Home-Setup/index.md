@@ -1,6 +1,6 @@
 ---
 layout: kit
-title: Home
+title: Home Kit
 ---
 
 
