@@ -142,8 +142,23 @@ ol li{
         flex-direction: column;
     }
 
+    .kitList{
+        list-style: inside;
+        span{
+            font-size: .7em;
+            color: var(--main-color);
+        }
+    }
+
+    .kitInfo{
+        list-style: none;
+        font-size: .7em;
+        color: var(var(--dark-color));
+        margin-bottom:calc(1rem * var(--ratio));
+    }
+
     .recipeBlock{
-        background-color: #FC664F;
+        background-color: var(--main-color);
         padding:calc(1rem * var(--r-2));
         color:white;
         flex-grow: 2;
@@ -242,8 +257,13 @@ ol li{
     }
     h3{
         margin:calc(1rem * var(--r-2)) 0;
+        padding-left:calc(1rem * var(--r-2));
         color:var(--dark-color);
     }
+}
+
+.coffeeTag:nth-of-type(odd){
+    background: linear-gradient(0deg, var(--light-bg) 75%, var(--accent-color) 15%);
 }
 
 footer{

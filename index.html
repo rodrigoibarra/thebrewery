@@ -7,7 +7,7 @@ layout: home
     <h2>Brewing Theory</h2>
     <p>This section contains a beginers guide to brewing coffe and explains some core concepts to getting a good cup of coffee.</p>
 
-    <a href="/Brew-Theory" class="callAction">Read More</a>
+    <a href="/Brew-Theory" class="callAction">This is comming Soon!</a>
     </div>
 </section>
 
@@ -16,7 +16,7 @@ layout: home
         <h2>The Kit</h2>
         <p>Here, you'll find a small review of every piece of coffee brewing tool I own and use for coffee making.</p>
 
-        <a href="#" class="callAction main">Let's go</a>
+        <a href="/The-Kit/" class="callAction main">Let's go</a>
     </section>
     <section class="recipeBlock">
         <div class="recipeBook">
@@ -36,10 +36,12 @@ layout: home
     <h2>Coffees I've brewed</h2>
     <div id="app" class="coffeeGrid">
         <div class="coffeeTag" v-for="coffee in Coffees">
-            <h3 class="title">(( coffee.roastName ))</h3>
+            <h3 class="coffeName">(( coffee.roastName ))</h3>
             <ul>
                 <li><strong>Shop:</strong> ((coffee.brand))</li>
                 <li><strong>Origen: </strong>(( coffee.origen ))</li>
+                <li><strong>Process: </strong>(( coffee.process ))</li>
+                <li><strong>Roast Date: </strong>(( coffee.roastDate ))</li>
             </ul>
         </div>
     </div>
