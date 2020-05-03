@@ -7,7 +7,7 @@
     --main-color: #FC664F;
     --accent-color:#77BCB1;
     --dark-color:#393939;
-    --light-bg:#F6F2EC;
+    --light-bg: #F6F2EC;
     --f-display:'Yeseva One', sans-serif;
     --ratio:1.6;
     --r2: calc(var(--ratio) * 2);
@@ -35,9 +35,16 @@
     footer {
     max-width: none;
     }
+
+    html{
+    background: #FFFFFF url("/assets/img/polvo.png") repeat;
+    background-size: auto;
+    background-size: 238px 238px;
+    }
+
     h1, h2, h3, h4{
       font-family: var(--f-display);
-      mask-image: url(/assets/img/texture-grungy.png);
+      mask-image: url(/assets/img/grungy.png);
   }
     h1{
     font-size: calc(1rem * var(--r3));
@@ -54,7 +61,20 @@
     }
 
   svg {
-    mask-image: url(/assets/img/texture-grungy.png);
+    mask-image: url(/assets/img/grungy.png);
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+
+}
+nav a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: calc(1rem * var(--r-3));;
+    padding: calc(1rem * var(--r-2));
+
 }
 
 article {
@@ -88,6 +108,8 @@ ol li{
         text-align: center;
         span{
             display: block;
+            text-align: center;
+            max-width: none;
             font-size: calc(1rem * var(--r-2));
             font-weight: 100;
             letter-spacing: calc(1em * var(--r-2));
@@ -96,7 +118,7 @@ ol li{
     }
     .heroTag{
         font-size:calc(1em * var(--r-4)) ;
-        mask-image: url(/assets/img/texture-grungy.png);
+        mask-image: url(/assets/img/grungy.png);
         margin: calc(1em * var(--r2));
     }
     .goodCupIcon{
@@ -118,7 +140,7 @@ ol li{
       }
 
     .theorySection{
-        padding: calc(1rem * var(--r3));
+        padding:calc(1rem * var(--r2)) calc(1rem * var(--r-2));
         color: var(--light-bg);
         background: var(--accent-color);
         display: flex;
@@ -168,7 +190,7 @@ ol li{
         width: 100%;
         border:calc(1rem * var(--r-3)) solid white;
         padding:calc(1rem * var(--r-3));
-        mask-image: url(/assets/img/texture-grungy.png);
+        mask-image: url(/assets/img/grungy.png);
 
 
     }
@@ -178,8 +200,9 @@ ol li{
         align-items: center;
         max-width: none;
     }
-    .recipeList{
+    .recipeList, .recipeList li{
         list-style: none;
+        max-width: none;
     }
     .recipeListItem {
         color:#F6F2EC;
@@ -230,7 +253,7 @@ ol li{
     grid-auto-rows: minmax(150px, auto);
     background-color: transparent;
     background-image: url("/assets/img/coffe-tile.svg");
-    mask-image: url(/assets/img/texture-grungy.png);
+    mask-image: url(/assets/img/grungy.png);
 }
 
 .coffeeTag{
@@ -267,10 +290,20 @@ ol li{
 }
 
 footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
     background-color:var(--main-color);
     color:var(--light-bg);
     border-top: calc(1rem * var(--r-3)) solid var(--accent-color);
-    padding: calc(1em * var(--r-4));
+    padding: calc(1em * var(--r-3));
     text-align: right;
     font-size: calc(1rem * var(--r-3));
+}
+
+
+.footerNav a{
+    font-size: calc(1em * var(--r-2));
+    letter-spacing: calc(1em * var(--r-4));
 }
