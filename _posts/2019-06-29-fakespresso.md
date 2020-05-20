@@ -1,13 +1,13 @@
 ---
 layout: recipe
 title:  "Fakespresso"
-date:   2019-07-02 15:10:03 -0500
+date:   2019-07-02 15:10:03 -05:00
 coffee: "20g"
 water: "50g"
 ratio: "2.5:1"
 total: "40ml"
 temp: "100ºc ish"
-categories: recipes
+tags: recipes
 ---
 
 While the name might put you off, since it's conception, the aeropress is built to make espresso like coffee, and then with the Fellow Prismo set up, that's more of a reality, if done right you might even get some bomb ass crema.
@@ -17,10 +17,10 @@ But that's not what we are here for, we here for sweet sweetr extraction.
 <details>
     <Summary class="recipeSummary">The ingredients</Summary>
         <ul class="recipeIngredients">
-            <li>Coffee <span>{{ page.coffee }}</span></li>
-            <li>Water <span>{{ page.water }}</span></li>
-            <li>Ratio <span>{{ page.ratio }}</span></li>
-            <li>Temp <span>{{ page.temp }}</span></li>
+            <li>Coffee <span>{{ coffee }}</span></li>
+            <li>Water <span>{{ water }}</span></li>
+            <li>Ratio <span>{{ ratio }}</span></li>
+            <li>Temp <span>{{ temp }}</span></li>
         </ul>
 </details>
 <h2>The recipe</h2>

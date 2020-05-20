@@ -19,13 +19,12 @@ What this setup lacks in accuracy more than makes up in versatility, I've actual
 <section class="theKit">
     <div>
         <ul class="kitList">
-            {% for post in site.categories.kit %}
+             {%- for post in collections.kit -%}
             <li>
-                <a href="{{ post.url }}" class="">{{ post.title }} <span>{{ post.part }} | {{post.kit}}</span></a>
+                <a href="{{ post.url }}">{{ post.data.title }} <span>{{ post.data.part }} | {{post.data.kit}}</span></a>
             </li>
             {% endfor %}
-        </ul>
-    </div>
+
 </section>
 
 And that's about it, sure, I use a mug but it's not really speciall or spectacular. Actually, that's not true, it is a black mug that changes colour when you pour hot liquid in it, but that's it, it's not specially insulated or shaped for aroma or anything.
