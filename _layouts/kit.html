@@ -3,7 +3,7 @@
     <p class="attention">This is a live design, so, a ton of stuff is not done or not I havent even got started with it.</p>
     <header class="hero">
         <h1 class="heroTitle">
-            {{ page.title }}
+            {{ title }}
         </h1>
         <p class="heroTag">CD {% include good-cup.html %} MX</p>
     </header>
@@ -11,9 +11,9 @@
 <section class="">
     <article>
         <ul class="kitInfo">
-            <li> <b>Part:</b> {{page.part}}</li>
-            <li> <b>Brand:</b> {{page.brand}}</li>
-            <li> <b>Kit:</b> {{page.kit}}</li>
+            <li> <b>Part:</b> {{ part }}</li>
+            <li> <b>Brand:</b> {{ brand }}</li>
+            <li> <b>Kit:</b> {{ kit }}</li>
         </ul>
         <div class="stack">
             {{content}}
