@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta naame="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{% if page.title %}{{ site.title }} | {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ site.description }}">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/gesha.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>A good Cup | {{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    <link rel="stylesheet" href="/assets/css/gesha.css">
+    <link rel="preload" href="/assets/fonts/Lora-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/Lora-Italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/VaultAlarm-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+    @font-face {
+    font-family: VaultAlarm;
+    src: url(/assets/fonts/VaultAlarm-Regular.woff2) format("woff2"),
+       url(/assets/fonts/VaultAlarm-Regular.woff2) format("woff");
+    font-weight: 700;
+    font-display: swap;
+}
+  @font-face {
+      font-family: Lora-Regular;
+      src: url(/assets/fonts/Lora-Regular.woff2) format("woff"),
+    url(/assets/fonts/Lora-Regular.woff2) format("woff2");
+        font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+  }
+  @font-face {
+      font-family: Lora-Italic;
+      src: url(/assets/fonts/Lora-Italic.woff2) format("woff"),
+    url(/assets/fonts/Lora-Italic.woff2) format("woff2");
+        font-weight: normal;
+      font-style: italic;
+      font-display: swap;
+  }
+    </style>
 </head>
 <body>

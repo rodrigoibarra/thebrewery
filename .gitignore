@@ -3,3 +3,7 @@ _site
 .jekyll-metadata
 .jekyll-cache
 .DS_Store
+<<<<<<< HEAD
+=======
+/node_modules
+>>>>>>> f5d8fbe62f68b373193e0e464ca8546e2e423ad3
