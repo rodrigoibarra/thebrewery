@@ -7,7 +7,7 @@
     --accent-color:#77BCB1;
     --dark-color:#393939;
     --light-bg: #F6F2EC;
-    --f-display:'VaultAlarm', sans-serif;
+    --f-display:'sunset-road', sans-serif;
     --ratio:1.6;
     --r2: calc(var(--ratio) * 2);
     --r3: calc(var(--ratio) * 3);
@@ -29,7 +29,6 @@
     div,
     header,
     section,
-    nav,
     main,
     footer {
     max-width: none;
@@ -43,7 +42,7 @@
 
     h1, h2, h3, h4{
       font-family: var(--f-display);
-      mask-image: url(/assets/img/grungy.png);
+      mask-image: url(/assets/img/texture8.png);
   }
     h1{
     font-size: calc(1rem * var(--r3));
@@ -64,14 +63,16 @@
 }
 
 nav{
+    font-family: var(--f-display);
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    color:inherit;
 
 }
 nav a{
     text-transform: uppercase;
     font-weight: bold;
-    font-size: calc(1rem * var(--r-3));;
+    font-size: calc(1rem * var(--r-2));;
     padding: calc(1rem * var(--r-2));
 
 }
@@ -81,7 +82,6 @@ article {
 }
 
 ol li{
-    font-size:calc(1rem * var(--r-2));
     padding:calc(1rem * var(--r-3));
 }
 
@@ -209,6 +209,7 @@ ol li{
     }
 
     .recipeIngredients li{
+        font-family: inherit;
         margin:0;
         padding:calc(1em * var(--r-4));
         border-bottom:1px solid #393939;
@@ -224,7 +225,6 @@ ol li{
 
     .callAction{
         display: inline-block;
-        border-radius:calc(1rem * var(--r-2));
         background-color: var(--dark-color);
         padding: calc(1em * var(--r-2));
         font-size: calc(1em * var(--r-2));
@@ -302,4 +302,25 @@ footer{
 .footerNav a{
     font-size: calc(1em * var(--r-2));
     letter-spacing: calc(1em * var(--r-4));
+}
+
+.theMenu{
+    background: var(--main-color);
+    font-size:calc(1em * var(--r2)) ;
+    padding:2em;
+    color:white;
+}
+
+.inside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:2rem;
+    min-height:80vh;
+}
+
+
+hr{
+    margin: calc(1em * var(--r-2)) 0;
+    mask-image: url("/assets/img/grungy.png");
 }

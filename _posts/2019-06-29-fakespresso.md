@@ -9,21 +9,20 @@ total: "40ml"
 temp: "100ºc ish"
 tags: recipes
 ---
-
 While the name might put you off, since it's conception, the aeropress is built to make espresso like coffee, and then with the Fellow Prismo set up, that's more of a reality, if done right you might even get some bomb ass crema.
 
 But that's not what we are here for, we here for sweet sweetr extraction.
 
-<details>
-    <Summary class="recipeSummary">The ingredients</Summary>
-        <ul class="recipeIngredients">
-            <li>Coffee <span>{{ coffee }}</span></li>
-            <li>Water <span>{{ water }}</span></li>
-            <li>Ratio <span>{{ ratio }}</span></li>
-            <li>Temp <span>{{ temp }}</span></li>
-        </ul>
-</details>
-<h2>The recipe</h2>
+<h3 class="recipeSummary">The ingredients</h3>
+
+<ul class="recipeIngredients">
+    <li>Coffee <span>{{ coffee }}</span></li>
+    <li>Water <span>{{ water }}</span></li>
+    <li>Ratio <span>{{ ratio }}</span></li>
+    <li>Temp <span>{{ temp }}</span></li>
+</ul>
+
+<h3>The recipe</h3>
 
 So how do I actually do that? well here we go:
 
@@ -34,3 +33,5 @@ So how do I actually do that? well here we go:
 
 
 And that's it, this is simple and a good way to pull an espresso like coffee.
+
+<hr>
