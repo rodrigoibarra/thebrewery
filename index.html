@@ -11,30 +11,26 @@ layout: home.html
     </div>
 </section>
 
-<div class="halfBlock">
-    <section class="gearBlock">
+<section class="gearBlock">
+    <div class="stack">
         <h2>The Kit</h2>
         <p>Here, you'll find a small review of every piece of coffee brewing tool I own and use for coffee making.</p>
-
         <a href="/The-Kit/" class="callAction main">Let's go</a>
-    </section>
-    <section class="recipeBlock">
-        <div class="recipeBook">
-            <h2 class="title recipeTitle">The recipes</h2>
-            <ul class="recipeList">
-                    {%- for post in collections.recipes -%}
-                <li>
-                    <a href="{{ post.url }}" class="recipeListItem">{{ post.data.title }} <span>{{post.data.total}}</span></a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </section>
-</div>
+    </div>
+</section>
+<section class="recipeBook">
+        <h2 class="title recipeTitle">The recipes</h2>
+        <ul class="recipeList">
+                {%- for post in collections.recipes -%}
+            <li>
+                <a href="{{ post.url }}" class="recipeListItem">{{ post.data.title }} <span>{{post.data.total}}</span></a>
+            </li>
+            {% endfor %}
+        </ul>
+</section>
 
-<section class="coffeeBlock">
+<section class="coffeeBlock" id="app">
     <h2>Coffees I've brewed</h2>
-    <div id="app" class="coffeeGrid">
         <div class="coffeeTag" v-for="coffee in Coffees">
             <h3 class="coffeName">(( coffee.roastName ))</h3>
             <ul>
@@ -44,5 +40,4 @@ layout: home.html
                 <li><strong>Roast Date: </strong>(( coffee.roastDate ))</li>
             </ul>
         </div>
-    </div>
 </section>
