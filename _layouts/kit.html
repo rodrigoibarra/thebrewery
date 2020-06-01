@@ -11,18 +11,19 @@
     </header>
     
     <div class="mainContainer">
-        <section>
+        <aside>
+            <ul class="kitInfo">
+                <li> <b>Part:</b> {{ part }}</li>
+                <li> <b>Brand:</b> {{ brand }}</li>
+                <li> <b>Kit:</b> {{ kit }}</li>
+            </ul>
+        </aside>
             <article>
-                <ul class="kitInfo">
-                    <li> <b>Part:</b> {{ part }}</li>
-                    <li> <b>Brand:</b> {{ brand }}</li>
-                    <li> <b>Kit:</b> {{ kit }}</li>
-                </ul>
+
                 <div class="stack">
                     {{content}}
                 </div>
         
             </article>
-        </section>
     </div>
 {% include footer.html %}

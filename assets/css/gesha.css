@@ -45,6 +45,20 @@ h1, h2, h3, h4{
     mask-image: url(/assets/img/texture8.png);
 }
 
+a{
+    text-decoration: none;
+    font-size: 1em;
+    color: inherit;
+}
+
+h1{
+    font-size: calc(1rem * var(--r3));
+    }
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 .attention{
     width: 100%;
     text-align: center;
@@ -94,6 +108,32 @@ h1, h2, h3, h4{
 }
 .goodCupIcon g{
     fill:var(--main-color);
+}
+
+nav a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: calc(1rem * var(--r-2));;
+    padding: calc(1rem * var(--r-2));
+
+}
+
+ol li{
+    padding:calc(1rem * var(--r-3));
+}
+
+
+footer{
+    background-color:var(--main-color);
+    color:var(--light-bg);
+    border-top: calc(1rem * var(--r-3)) solid var(--accent-color);
+    padding: calc(1em * var(--r-3));
+    text-align: right;
+    font-size: calc(1rem * var(--r-3));
+}
+.footerNav a{
+    font-size: calc(1em * var(--r-2));
+    letter-spacing: calc(1em * var(--r-4));
 }
 
 /****** Styling *******/
@@ -186,10 +226,49 @@ h1, h2, h3, h4{
     background: linear-gradient(0deg, var(--light-bg) 75%, var(--accent-color) 15%);
 }
 
+.callAction{
+    display: inline-block;
+    background-color: var(--main-color);
+    padding: calc(1em * var(--r-2));
+    font-size: calc(1em * var(--r-2));
+    margin-top: calc(1rem * var(--ratio));
+}
+
+.recipeIngredients li{
+    font-family: inherit;
+    margin:0;
+    padding:calc(1em * var(--r-4));
+    border-bottom:1px solid #393939;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.kitList{
+    list-style: inside;
+}
+.kitList span{
+    font-size: .7em;
+    color: var(--main-color);
+}
+
+.kitInfo{
+    list-style: none;
+    font-size: .7em;
+    color: var(var(--dark-color));
+    margin-bottom:calc(1rem * var(--ratio));
+}
 /******** LAYOUT *******/
 
 .stack * + * {
     margin-top: calc(1rem * var(--ratio));
+}
+
+nav{
+    font-family: var(--f-display);
+    display: flex;
+    justify-content: flex-start;
+    color:inherit;
+
 }
 
 .mainContainer{
@@ -224,12 +303,35 @@ h1, h2, h3, h4{
     grid-column: span 9;
 }
 
+aside{
+    grid-column: 1 / 2;
+    padding: calc(1em * var(--r-2));
+    margin: 0 auto;
+}
+
+article{
+    padding: calc(1em * var(--r-2));
+    margin: 0 auto;
+    grid-column: 2 / span 4;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
 
 @media screen and (max-width: 900px) {
 
 
 }
 @media screen and (max-width: 600px) {
+    body{
+        font-size: calc(1.2rem + 0.5vw);
+    }
 
     .mainContainer, .coffeeBlock{
         display: block;
