@@ -9,18 +9,20 @@
         </h1>
         <p class="heroTag">CD {% include good-cup.html %} MX</p>
     </header>
-
-<section class="">
-    <article>
-        <ul class="kitInfo">
-            <li> <b>Part:</b> {{ part }}</li>
-            <li> <b>Brand:</b> {{ brand }}</li>
-            <li> <b>Kit:</b> {{ kit }}</li>
-        </ul>
-        <div class="stack">
-            {{content}}
-        </div>
-
-    </article>
-</section>
+    
+    <div class="mainContainer">
+        <section>
+            <article>
+                <ul class="kitInfo">
+                    <li> <b>Part:</b> {{ part }}</li>
+                    <li> <b>Brand:</b> {{ brand }}</li>
+                    <li> <b>Kit:</b> {{ kit }}</li>
+                </ul>
+                <div class="stack">
+                    {{content}}
+                </div>
+        
+            </article>
+        </section>
+    </div>
 {% include footer.html %}
